@@ -1,0 +1,691 @@
+{
+  "mgmt_url": "http://localhost:9090",
+  "public_key": "",
+  "perf_collector_cert": "-----BEGIN CERTIFICATE-----\r\nMIIC+TCCAeGgAwIBAgIJAO6VIO0zX9/5MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\r\nBAMMCCoub28uY29tMB4XDTE3MDQyMjA2MzQxNFoXDTI3MDQyMDA2MzQxNFowEzER\r\nMA8GA1UEAwwIKi5vby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\r\nAQDG17BjsM/+ZW1gwXJ42r2D28OAPHPZAxqaD5dJvPgyzb7yWZePmxVsr2tJdh0x\r\nbgLxk2txhm53blVldotOyIx8JDgjnqonBDcyFKBu3WlKn+/y1/MrK3AvFqs25TmT\r\nIKlc2qG5dHDCvm6i7ydXsPIB0eIzH1BJECdmTxPYbOnDkZ+75UCZ+J3QgQm/PoqR\r\nogSGCXkh3a3CAzjeZIOC6y1KEgk3MbD/vSbPmNOtk9Ft0rA5u56QxKd65CJ0myGu\r\ndWQVEixalPKMbYfNiboHGENf1J/XmVIA9lSBANvg7UVmBm/fJQiOTFx4GnVabYa/\r\nG47E2vMJ87hvMeVdmzXzc0fhAgMBAAGjUDBOMB0GA1UdDgQWBBTUaufGOAWxW+FJ\r\nnaVjMSjwt4etjjAfBgNVHSMEGDAWgBTUaufGOAWxW+FJnaVjMSjwt4etjjAMBgNV\r\nHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCl24s7+XtOcBG6bI95SGZQoGCV\r\nPQGawi2otseNBDZuf4mHArDrR9osesW2B2UUdtnNh0jTuv5T1+S9RvIupvekpEN3\r\nDFYnC6HdQbQL5qiI1khAPXXKK738UXsetZ1UmV103RodC+wvxEd6+gNBX4wr3q2S\r\nXnp7LF8wbSNnSUGaiac4SUGCHyvcasl+x3ivA/DyRNixazAdliAUjqCSIuia/Da7\r\nI2JA0P9o+pbQD9aIJNC1j4l8Z4nK4lLJjb2oWv6Zww74w2oCMdgQ7ksLrop35q/b\r\njEV7kjwsK0oVNDx8fc2s7H43XD6J2zMk8iCeHE6p/gyUqs6ehCf55BFYrrzG\r\n-----END CERTIFICATE-----\r\n",
+  "global": {},
+  "customer_domain": "env02.ts02.strati-dotnet",
+  "app_name": "taskscheduler",
+  "run_list": [
+    "recipe[attachment::before_update]",
+    "recipe[taskscheduler::update]",
+    "recipe[attachment::after_update]"
+  ],
+  "ip_attribute": "public_ip",
+  "name": "taskscheduler-441810-1",
+  "mgmt_cert": "-----BEGIN CERTIFICATE-----\r\nMIIC+TCCAeGgAwIBAgIJAO6VIO0zX9/5MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\r\nBAMMCCoub28uY29tMB4XDTE3MDQyMjA2MzQxNFoXDTI3MDQyMDA2MzQxNFowEzER\r\nMA8GA1UEAwwIKi5vby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\r\nAQDG17BjsM/+ZW1gwXJ42r2D28OAPHPZAxqaD5dJvPgyzb7yWZePmxVsr2tJdh0x\r\nbgLxk2txhm53blVldotOyIx8JDgjnqonBDcyFKBu3WlKn+/y1/MrK3AvFqs25TmT\r\nIKlc2qG5dHDCvm6i7ydXsPIB0eIzH1BJECdmTxPYbOnDkZ+75UCZ+J3QgQm/PoqR\r\nogSGCXkh3a3CAzjeZIOC6y1KEgk3MbD/vSbPmNOtk9Ft0rA5u56QxKd65CJ0myGu\r\ndWQVEixalPKMbYfNiboHGENf1J/XmVIA9lSBANvg7UVmBm/fJQiOTFx4GnVabYa/\r\nG47E2vMJ87hvMeVdmzXzc0fhAgMBAAGjUDBOMB0GA1UdDgQWBBTUaufGOAWxW+FJ\r\nnaVjMSjwt4etjjAfBgNVHSMEGDAWgBTUaufGOAWxW+FJnaVjMSjwt4etjjAMBgNV\r\nHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCl24s7+XtOcBG6bI95SGZQoGCV\r\nPQGawi2otseNBDZuf4mHArDrR9osesW2B2UUdtnNh0jTuv5T1+S9RvIupvekpEN3\r\nDFYnC6HdQbQL5qiI1khAPXXKK738UXsetZ1UmV103RodC+wvxEd6+gNBX4wr3q2S\r\nXnp7LF8wbSNnSUGaiac4SUGCHyvcasl+x3ivA/DyRNixazAdliAUjqCSIuia/Da7\r\nI2JA0P9o+pbQD9aIJNC1j4l8Z4nK4lLJjb2oWv6Zww74w2oCMdgQ7ksLrop35q/b\r\njEV7kjwsK0oVNDx8fc2s7H43XD6J2zMk8iCeHE6p/gyUqs6ehCf55BFYrrzG\r\n-----END CERTIFICATE-----\r\n",
+  "workorder": {
+    "rfcCi": {
+      "ciAttributes": {
+        "task_description": "test app",
+        "task_name": "TaskSchedulerTestApp",
+        "execution_time_limit": "PT2H",
+        "start_day": "2017-06-19",
+        "working_directory": "e:\\apps",
+        "version": "latest",
+        "frequency": "daily",
+        "days_of_week": "Thursday",
+        "path": "TaskSchedulerTestApp.exe",
+        "start_time": "23:30:45",
+        "password": "Walmart1",
+        "days_interval": "2",
+        "package_name": "TaskSchedulerTestApp",
+        "arguments": "E:\\apps 4",
+        "repository_url": "http://localhost/chocolatey/",
+        "physical_path": "e:\\apps",
+        "weeks_interval": "3",
+        "username": "himanshu"
+      },
+      "ciBaseAttributes": {
+        "days_of_week": "Tuesday",
+        "arguments": "E:\\sampleapps 4",
+        "physical_path": "E:\\sampleapps"
+      },
+      "ciAttrProps": {
+        "IS_SECURED": {
+          "password": "true"
+        }
+      },
+      "rfcId": 20327,
+      "releaseId": 20326,
+      "ciId": 457310,
+      "nsPath": "/strati-dotnet/ts02/env02/bom/ts-plat02/1",
+      "ciClassName": "bom.oneops.1.Taskscheduler",
+      "impl": "oo::chef-11.18.12",
+      "ciName": "taskscheduler-441810-1",
+      "ciGoid": "457282-11574-457310",
+      "ciState": "default",
+      "rfcAction": "update",
+      "createdBy": "h0n0032",
+      "updatedBy": "h0n0032:controller",
+      "rfcCreatedBy": "h0n0032",
+      "execOrder": 1,
+      "lastAppliedRfcId": 19610,
+      "comments": "",
+      "isActiveInRelease": true,
+      "rfcCreated": "Jun 19, 2017 10:14:48 AM",
+      "rfcUpdated": "Jun 19, 2017 10:14:48 AM",
+      "created": "Jun 16, 2017 10:54:33 AM",
+      "updated": "Jun 19, 2017 9:51:23 AM"
+    },
+    "cloud": {
+      "nsId": 441809,
+      "ciAttributes": {
+        "adminstatus": "active",
+        "auth": "",
+        "description": "Cloud for openstack-ndcdev1",
+        "location": "/public/walmartlabs/clouds/openstack-ndcdev1",
+        "priority": "1"
+      },
+      "attrProps": {},
+      "ciId": 441810,
+      "ciName": "dev-ndc1",
+      "ciClassName": "account.Cloud",
+      "impl": "oo::chef-11.4.0",
+      "nsPath": "/strati-dotnet/_clouds",
+      "ciGoid": "441809-1014-441810",
+      "comments": "",
+      "ciState": "default",
+      "lastAppliedRfcId": 0,
+      "createdBy": "spage",
+      "created": "Apr 22, 2017 8:24:35 AM",
+      "updated": "Apr 22, 2017 8:24:35 AM"
+    },
+    "box": {
+      "nsId": 456769,
+      "ciAttributes": {
+        "replace_after_repairs": "3",
+        "is_active": "true",
+        "pack_digest": "3c45a9228fbbc55b51b4efe95da2bc66",
+        "description": "",
+        "replace_after_minutes": "60",
+        "availability": "single",
+        "source": "oneops",
+        "autoscale": "false",
+        "is_platform_enabled": "true",
+        "pack": "iis",
+        "version": "1",
+        "major_version": "1",
+        "autorepair_exponential_backoff": "true",
+        "autoreplace": "true",
+        "autorepair": "true",
+        "autocomply": "true"
+      },
+      "attrProps": {},
+      "ciId": 456779,
+      "ciName": "ts-plat02",
+      "ciClassName": "manifest.Platform",
+      "impl": "oo::chef-11.4.0",
+      "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+      "ciGoid": "456769-1113-456779",
+      "comments": "",
+      "ciState": "default",
+      "lastAppliedRfcId": 18962,
+      "createdBy": "h0n0032",
+      "created": "Jun 16, 2017 10:04:22 AM",
+      "updated": "Jun 16, 2017 10:04:22 AM"
+    },
+    "payLoad": {
+      "OO_GLOBAL_VARS": [
+        {
+          "ciAttributes": {
+            "value": "env02"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 0,
+          "ciClassName": "manifest.Globalvar",
+          "ciName": "env_name",
+          "execOrder": 0,
+          "isActiveInRelease": false
+        }
+      ],
+      "DependsOn": [
+        {
+          "ciAttributes": {
+            "mode": "no-raid",
+            "size": "100%FREE",
+            "mount_point": "E",
+            "fstype": "ext3"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 457304,
+          "nsPath": "/strati-dotnet/ts02/env02/bom/ts-plat02/1",
+          "ciClassName": "bom.oneops.1.Volume",
+          "ciName": "volume-441810-1",
+          "ciGoid": "457282-5314-457304",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "updatedBy": "h0n0032:controller",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19550,
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:52:56 AM",
+          "updated": "Jun 16, 2017 10:52:56 AM"
+        }
+      ],
+      "Organization": [
+        {
+          "ciAttributes": {
+            "owner": "sahebjade@gmail.com",
+            "tags": "{}"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 5842,
+          "nsPath": "/",
+          "ciClassName": "account.Organization",
+          "ciName": "strati-dotnet",
+          "ciGoid": "100-1087-5842",
+          "ciState": "default",
+          "createdBy": "spage",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "isActiveInRelease": false,
+          "created": "Apr 22, 2017 7:27:54 AM",
+          "updated": "Apr 22, 2017 7:27:54 AM"
+        }
+      ],
+      "OO_CLOUD_VARS": [
+        {
+          "ciAttributes": {
+            "value": "dev-ndc1"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 0,
+          "ciClassName": "account.Cloudvar",
+          "ciName": "cloud_name",
+          "execOrder": 0,
+          "isActiveInRelease": false
+        },
+        {
+          "ciAttributes": {
+            "encrypted_value": "",
+            "secure": "false",
+            "value": "https://nexus.stage.walmart.com"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {
+            "IS_SECURED": {
+              "encrypted_value": "true"
+            }
+          },
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 441826,
+          "nsPath": "/strati-dotnet/_clouds/dev-ndc1",
+          "ciClassName": "account.Cloudvar",
+          "ciName": "nexus",
+          "ciGoid": "441815-1025-441826",
+          "ciState": "default",
+          "createdBy": "spage",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Apr 22, 2017 8:25:03 AM",
+          "updated": "Apr 22, 2017 8:25:03 AM"
+        },
+        {
+          "ciAttributes": {
+            "encrypted_value": "",
+            "secure": "false",
+            "value": "http://repos.walmart.com"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {
+            "IS_SECURED": {
+              "encrypted_value": "true"
+            }
+          },
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 441821,
+          "nsPath": "/strati-dotnet/_clouds/dev-ndc1",
+          "ciClassName": "account.Cloudvar",
+          "ciName": "satproxy",
+          "ciGoid": "441815-1025-441821",
+          "ciState": "default",
+          "createdBy": "spage",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Apr 22, 2017 8:25:03 AM",
+          "updated": "Apr 22, 2017 8:25:03 AM"
+        },
+        {
+          "ciAttributes": {
+            "encrypted_value": "",
+            "secure": "false",
+            "value": ""
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {
+            "IS_SECURED": {
+              "encrypted_value": "true"
+            }
+          },
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 441816,
+          "nsPath": "/strati-dotnet/_clouds/dev-ndc1",
+          "ciClassName": "account.Cloudvar",
+          "ciName": "apiproxy",
+          "ciGoid": "441815-1025-441816",
+          "ciState": "default",
+          "createdBy": "spage",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Apr 22, 2017 8:25:03 AM",
+          "updated": "Apr 22, 2017 8:25:03 AM"
+        }
+      ],
+      "SecuredBy": [
+        {
+          "ciAttributes": {
+            "key_name": "oneops_key-456744-env02-456779",
+            "private": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAqhztiDHHNtHiI5bhheUA7ggXCUYze5pP6ZZYJmWT/ZabI6hy\nn4A5wZTaOeO3IE6VwFBjjGaQ5o94ElRLA1G7oSMEqD+c6qQEwPW/TEhZatjC3Qrz\nal0Y75Rnw3EgEyVy4g6FdHQ02XJt9nrbUtLR7tWwKa5MU16HuVDzfueGJLqJOSBm\nwY+x6pPvn9uRqBetT/YWTHhkp+SR6nPzV+8ffl804ISZBPyqcwCGXvz1Uizlfj7+\nAXKDvkriT17S3GlcJ7oHDFAYnWdoQR90oa+XyI6Xnkwef1PPVouDUrYtCZId8j1K\nGS/mChIGc9UNPu1F0xBgXxrrdVpUgKhkA8OzYwIDAQABAoIBAEGYbAODZlT+M5wT\nlxzhRC2FExTxa/KyezQQVCdiLeGwDFyAnMpiUGMT+d4ur7OWeeoxVWGTPzaYhe1T\ncaVzA83LygTymphj7K1XVY+dqlUoBmPj0B7ojS/84tIbMgoP+6+td8qC8MoUdNCB\naUcTof3dilNYMXhIUD+mNm5t6m0Im66ZeMUYi9DwGwE49uzeK0Q+q75cNthN9T3Q\nmeXZYhBIwPESAHSzRR36/A7C530pvMGBwCPB55Z81obDUDMzyVoLKFbZ9vX/mnBY\nH17WDBTmTZ/szEnj5SN0S1GMVcnqah7FtNwtNmVbpNsLtgaW/ssV7cOtvEpmIVh0\n2rTNmzECgYEA2+PelHvgx0AGgue8PceZT8JFM1YEC8l2KiYE7sVv4p1aYzB0VWID\nJ1tJ1ygYRcI6/8HXKwtzURCBIlZ4jH0qiXZR22vJ73HmILBh7ABNTVdftb0D9+nw\n9a+GoM6CgvRkdlthYPTDsibjvZYejMnMH6M/PYDrbCpQsyhmXTLBkwkCgYEAxgxw\nlB4kVimyfdsu6qA/O5UwHJppebIQI25uEYth/iqWCw6Jym6S74YM8+ZRc3q9eXjf\nYlamB067cif8ews3MxLF6+NHZ/zUWlEgkb98lFemsmhafowQgwFgQFVskocKI0mB\ntIHKuL/Lr3KPZgZbDKhrbj2Q+viiZ/3nnPBt0gsCgYEAkG2ddt3fCECPhk/7noCJ\nvI+XsF5hDfTnfku2lbZtBOXhxqC+6I4WEDWvzHhzaO5onjCNyaIdvjMe/pTZXT2h\nQOTMY1jrLDEdvH7d8otIOvKW1OIvxxiLwnPl851wr98iVXM0BOD/4PYWRCJkMokh\nX+5zzUvuVf99Pg/dHH4IEzECgYAz+7vpBOhgvV0eb9Omvh0a1JPmThl1Wemmgyvc\n6wrzndX4XP6J5fAncrYfpsqmVwc4xSNNOpUlweKtmhVJbq40d67/tY5emxxaAIVd\n/DcE8OTOW1m1cao72Lac7E8tPsjIbljfOlotmBosmRNOokhv0B0yuHI/jdeDGEAd\nD3aj9QKBgQCqT8nwP0aOAXpuPXWaV8cJb0BWFpep/uqwSAAdJ3rJKKIAGKBdUiPL\nFxIhhgzYsmxfWjBkPnF1qtd8Yvcpq0xh1J2ltAX0kuyUfKu2fa5OHmcRHrE2Xxpy\nUOV/TYT1XbQs5rUPhKANj12QD+O2TKpVd+vuGEKauj+WEHuMWGuZPA\u003d\u003d\n-----END RSA PRIVATE KEY-----\n",
+            "public": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqHO2IMcc20eIjluGF5QDuCBcJRjN7mk/pllgmZZP9lpsjqHKfgDnBlNo547cgTpXAUGOMZpDmj3gSVEsDUbuhIwSoP5zqpATA9b9MSFlq2MLdCvNqXRjvlGfDcSATJXLiDoV0dDTZcm32ettS0tHu1bAprkxTXoe5UPN+54Ykuok5IGbBj7Hqk++f25GoF61P9hZMeGSn5JHqc/NX7x9+XzTghJkE/KpzAIZe/PVSLOV+Pv4BcoO+SuJPXtLcaVwnugcMUBidZ2hBH3Shr5fIjpeeTB5/U89Wi4NSti0Jkh3yPUoZL+YKEgZz1Q0+7UXTEGBfGut1WlSAqGQDw7Nj\n"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {
+            "IS_SECURED": {
+              "private": "true"
+            }
+          },
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 457286,
+          "nsPath": "/strati-dotnet/ts02/env02/bom/ts-plat02/1",
+          "ciClassName": "bom.oneops.1.Keypair",
+          "ciName": "sshkeys-441810-1",
+          "ciGoid": "457282-3478-457286",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "updatedBy": "h0n0032:controller",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19471,
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:35 AM",
+          "updated": "Jun 16, 2017 10:04:35 AM"
+        }
+      ],
+      "Environment": [
+        {
+          "ciAttributes": {
+            "debug": "false",
+            "codpmt": "false",
+            "profile": "",
+            "description": "",
+            "availability": "single",
+            "monitoring": "true",
+            "autoscale": "false",
+            "adminstatus": "provision",
+            "global_dns": "false",
+            "subdomain": "env02.ts02.strati-dotnet",
+            "logging": "false",
+            "dpmtdelay": "60",
+            "custom_monitor": "false",
+            "autoreplace": "false",
+            "autorepair": "true"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456744,
+          "nsPath": "/strati-dotnet/ts02",
+          "ciClassName": "manifest.Environment",
+          "ciName": "env02",
+          "ciGoid": "456443-1044-456744",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "comments": "SUCCESS: Generation time taken: 0 seconds.",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:03:45 AM",
+          "updated": "Jun 19, 2017 10:14:49 AM"
+        }
+      ],
+      "ManagedVia": [
+        {
+          "ciAttributes": {
+            "availability_zone": "az1",
+            "metadata": "{\"owner\":\"himanshu.nanda@walmart.com\",\"mgmt_url\":\"http://localhost:9090\",\"organization\":\"strati-dotnet\",\"assembly\":\"ts02\",\"environment\":\"env02\",\"platform\":\"ts-plat02\",\"component\":\"456781\",\"instance\":\"457289\"}",
+            "public_ip": "172.16.140.149",
+            "instance_name": "ts-plat02-env02-ts02-strati-dotnet-457289",
+            "private_ipv6": "",
+            "task_state": "",
+            "ports": "{}",
+            "host_id": "3ada5637d25d80a5aa6382c3858740fb79aec24dad98257fa66dd082",
+            "private_ip": "172.16.140.149",
+            "tags": "{}",
+            "vm_state": "active",
+            "dns_record": "172.16.140.149",
+            "cores": "2",
+            "instance_id": "6414b529-c767-4c0c-a59e-d595c80c0ab9",
+            "size": "M-WIN",
+            "hypervisor": "",
+            "instance_state": "ACTIVE",
+            "require_public_ip": "false",
+            "server_image_name": "W2K12R2_DC_x64_cygwin",
+            "ram": "4095.61",
+            "server_image_id": "04697384-5096-4c8b-ab8b-8da138228da7"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 457289,
+          "nsPath": "/strati-dotnet/ts02/env02/bom/ts-plat02/1",
+          "ciClassName": "bom.oneops.1.Compute",
+          "ciName": "compute-441810-1",
+          "ciGoid": "457282-2198-457289",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "updatedBy": "h0n0032:controller",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19477,
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:26:41 AM",
+          "updated": "Jun 16, 2017 10:26:41 AM"
+        }
+      ],
+      "RequiresComputes": [
+        {
+          "ciAttributes": {
+            "availability_zone": "az1",
+            "metadata": "{\"owner\":\"himanshu.nanda@walmart.com\",\"mgmt_url\":\"http://localhost:9090\",\"organization\":\"strati-dotnet\",\"assembly\":\"ts02\",\"environment\":\"env02\",\"platform\":\"ts-plat02\",\"component\":\"456781\",\"instance\":\"457289\"}",
+            "public_ip": "172.16.140.149",
+            "instance_name": "ts-plat02-env02-ts02-strati-dotnet-457289",
+            "private_ipv6": "",
+            "task_state": "",
+            "ports": "{}",
+            "host_id": "3ada5637d25d80a5aa6382c3858740fb79aec24dad98257fa66dd082",
+            "private_ip": "172.16.140.149",
+            "tags": "{}",
+            "vm_state": "active",
+            "dns_record": "172.16.140.149",
+            "cores": "2",
+            "instance_id": "6414b529-c767-4c0c-a59e-d595c80c0ab9",
+            "size": "M-WIN",
+            "hypervisor": "",
+            "instance_state": "ACTIVE",
+            "require_public_ip": "false",
+            "server_image_name": "W2K12R2_DC_x64_cygwin",
+            "ram": "4095.61",
+            "server_image_id": "04697384-5096-4c8b-ab8b-8da138228da7"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 457289,
+          "nsPath": "/strati-dotnet/ts02/env02/bom/ts-plat02/1",
+          "ciClassName": "bom.oneops.1.Compute",
+          "ciName": "compute-441810-1",
+          "ciGoid": "457282-2198-457289",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "updatedBy": "h0n0032:controller",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19477,
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:26:41 AM",
+          "updated": "Jun 16, 2017 10:26:41 AM"
+        }
+      ],
+      "RealizedAs": [
+        {
+          "ciAttributes": {
+            "task_description": "test app",
+            "task_name": "TaskSchedulerTestApp",
+            "start_day": "2017-06-19",
+            "execution_time_limit": "PT2H",
+            "working_directory": "$OO_LOCAL{app_directory}",
+            "version": "latest",
+            "frequency": "weekly",
+            "days_of_week": "Thursday",
+            "start_time": "23:30:00",
+            "path": "TaskSchedulerTestApp.exe",
+            "password": "Walmart1",
+            "days_interval": "2",
+            "package_name": "TaskSchedulerTestApp",
+            "arguments": "E:\\apps 4",
+            "repository_url": "http://repo.wal-mart.com/service/local/nuget/nuget-walmart/",
+            "physical_path": "$OO_LOCAL{app_directory}",
+            "weeks_interval": "3",
+            "username": "himanshu"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {
+            "IS_SECURED": {
+              "password": "true"
+            }
+          },
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456782,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.oneops.1.Taskscheduler",
+          "ciName": "taskscheduler",
+          "ciGoid": "456769-11571-456782",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "updatedBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 20322,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 19, 2017 10:14:48 AM"
+        }
+      ],
+      "OO_LOCAL_VARS": [
+        {
+          "ciAttributes": {
+            "value": "ts-plat02"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 0,
+          "ciClassName": "manifest.Localvar",
+          "ciName": "platform_name",
+          "execOrder": 0,
+          "isActiveInRelease": false
+        },
+        {
+          "ciAttributes": {
+            "secure": "false",
+            "value": "e:\\logs"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456843,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.Localvar",
+          "ciName": "log_directory",
+          "ciGoid": "456769-1070-456843",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19438,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 16, 2017 10:04:22 AM"
+        },
+        {
+          "ciAttributes": {
+            "secure": "false",
+            "value": "E"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456845,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.Localvar",
+          "ciName": "drive_name",
+          "ciGoid": "456769-1070-456845",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19442,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 16, 2017 10:04:22 AM"
+        },
+        {
+          "ciAttributes": {
+            "secure": "false",
+            "value": "C:\\ProgramData\\chocolatey\\lib\\NuGet.CommandLine\\tools\\NuGet.exe"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456847,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.Localvar",
+          "ciName": "nuget_exe",
+          "ciGoid": "456769-1070-456847",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19446,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 16, 2017 10:04:22 AM"
+        },
+        {
+          "ciAttributes": {
+            "secure": "false",
+            "value": "e:\\apps"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456849,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.Localvar",
+          "ciName": "app_directory",
+          "ciGoid": "456769-1070-456849",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19450,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 16, 2017 10:04:22 AM"
+        },
+        {
+          "ciAttributes": {
+            "secure": "false",
+            "value": "e:\\platform_deployment"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456851,
+          "nsPath": "/strati-dotnet/ts02/env02/manifest/ts-plat02/1",
+          "ciClassName": "manifest.Localvar",
+          "ciName": "platform_deployment",
+          "ciGoid": "456769-1070-456851",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 19454,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 10:04:22 AM",
+          "updated": "Jun 16, 2017 10:04:22 AM"
+        }
+      ],
+      "Assembly": [
+        {
+          "ciAttributes": {
+            "owner": "himanshu.nanda@walmart.com",
+            "description": "",
+            "tags": "{}"
+          },
+          "ciBaseAttributes": {},
+          "ciAttrProps": {},
+          "rfcId": 0,
+          "releaseId": 0,
+          "ciId": 456439,
+          "nsPath": "/strati-dotnet",
+          "ciClassName": "account.Assembly",
+          "ciName": "ts02",
+          "ciGoid": "5844-1005-456439",
+          "ciState": "default",
+          "createdBy": "h0n0032",
+          "execOrder": 0,
+          "lastAppliedRfcId": 0,
+          "comments": "",
+          "isActiveInRelease": false,
+          "created": "Jun 16, 2017 9:57:45 AM",
+          "updated": "Jun 16, 2017 9:57:45 AM"
+        }
+      ]
+    },
+    "services": {},
+    "searchTags": {
+      "requestEnqueTS": "2017-06-19T10:14:57.296",
+      "requestDequeTS": "2017-06-19T10:14:57.300",
+      "queueTime": "0.004",
+      "rfcAction": "update",
+      "inductor": "10.74.109.92 (eth0)"
+    },
+    "additionalInfo": {},
+    "dpmtRecordId": 20335,
+    "deploymentId": 20333,
+    "rfcId": 20327,
+    "dpmtRecordState": "failed",
+    "created": "Jun 19, 2017 10:14:56 AM"
+  },
+  "taskscheduler": {
+    "task_description": "test app",
+    "task_name": "TaskSchedulerTestApp",
+    "execution_time_limit": "PT2H",
+    "start_day": "2017-06-19",
+    "working_directory": "e:\\apps",
+    "version": "latest",
+    "frequency": "daily",
+    "days_of_week": "Thursday",
+    "path": "TaskSchedulerTestApp.exe",
+    "start_time": "23:30:55",
+    "password": "Walmart1",
+    "days_interval": "2",
+    "package_name": "TaskSchedulerTestApp",
+    "arguments": "E:\\apps 4",
+    "repository_url": "http://repo.wal-mart.com/service/local/nuget/nuget-walmart/",
+    "physical_path": "e:\\apps",
+    "weeks_interval": "3",
+    "username": "himanshu"
+  },
+  "mgmt_domain": "localhost"
+}

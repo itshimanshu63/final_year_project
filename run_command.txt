@@ -1,0 +1,1 @@
+chef-solo -c .\client.rb -j .\taskscheduler.json -o "taskscheduler::add"
